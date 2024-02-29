@@ -1,0 +1,143 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 de fev. de 2024, 16:07:55
+    Author     : Nicoly Anselmi
+*/
+
+*{
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+box{
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 500px;
+    margin: 0 auto;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #FFF;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: red;
+}
+
+.foto{
+    margin: 0 auto;
+    width: 400px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.fotos{
+    width:400%;
+    height: 800px;
+    display: flex;   
+}
+
+.fotos input{
+    display: none;
+}
+
+.foto{
+    width: 25%;
+    position: relative;
+}
+
+.foto img{
+    width: 800px;
+}
+
+.manual-navegation{
+    position: absolute;
+    width: 800px;
+    margin-top: - 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-navegation{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual1-btn:not(:last-child){
+    margin-right: 400px;
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -33%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -66%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;  
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
